@@ -656,24 +656,19 @@ select.form-control {
   right: 25px;
   top: 38px;
 }
-.zero {
-  font-size: 30px;
-  color: rgb(138, 21, 248);
-  display: flex;
-  margin-top: 5px;
-  width: 5px;
-  border: 5px solid hsl(0, 0%, 100%);
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
 
-.img-carrinho-resumo img{
+
+.img-produto-resumo img {
   width: 50px;
   border-radius: 11px;
 }
 
-.title-produto-resumo{
+.item-carrinho.resumo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.title-produto-resumo {
   color: var(--color-black);
   font-size: 18px;
   text-overflow: ellipsis;
@@ -681,16 +676,20 @@ select.form-control {
   overflow: hidden;
   margin-bottom: 0;
 }
+
 .price-produto-resumo {
   color: var(--color-primary);
   font-size: 16px;
   margin-bottom: 0;
 }
-.quantidade-produto-resumo{
+
+.quantidade-produto-resumo {
   color: var(--color-black);
   font-size: 20px;
   margin-bottom: 0;
 }
+
+
 .img-map {
   width: 50px;
   height: 50px;
@@ -702,10 +701,104 @@ select.form-control {
   align-items: center;
   border-radius: 11px;
 }
+
 .texto-endereco {
   margin-bottom: 0;
   color: var(--color-black);
 }
-.cidade-endereco{
+
+.cidade-endereco {
   margin-bottom: 0;
+}
+
+.badge-total-carrinho {
+  width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: var(--color-secondary);
+    border-radius: 50px;
+    right: -5px;
+    top: -5px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-carrinho {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  color: var(--color-black-heavy)!important;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.container-mensagens {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 9999;
+}
+
+.toast {
+  color: var(--color-white);
+  padding: 10px 25px;
+  font-size: 18px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.toast.red {
+  background-color: var(--color-red);
+}
+
+.toast.green {
+  background-color: var(--color-green);
+} 
+.carrinho-vazio {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.carrinho-vazio i {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.carrinho-vazio {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.carrinho-vazio i {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50px;
+  margin-bottom: 10px;
 }
